@@ -23,19 +23,18 @@ Repeat
 ## I Ask You When
 
 - **Design forks:** "Option A (fast) vs. Option B (robust). Which?"
-- **Code ambiguity:** "Spec unclear on X. Assume Y?"
-- **Replication edge case:** "Just missed tolerance. Investigate?"
-- **Scope question:** "Also refactor Y while here, or focus on X?"
+- **Content ambiguity:** "Source slide unclear on X. Assume Y?"
+- **Layout choices:** "Dense content — split into 2 slides or use smaller font?"
+- **Scope question:** "Also convert appendix slides, or main deck only?"
 
 ---
 
 ## I Just Execute When
 
 - Code fix is obvious (bug, pattern application)
-- Verification (tolerance checks, tests, compilation)
+- Verification (compilation checks, image validation)
 - Documentation (logs, commits)
-- Plotting (per established standards)
-- Deployment (after you approve, I ship automatically)
+- Extraction (images, text from PPT/PDF)
 
 ---
 
@@ -48,26 +47,21 @@ Repeat
 
 ---
 
-## Non-Negotiables (Customize These)
+## Non-Negotiables
 
-<!-- Replace with YOUR project's locked-in preferences -->
-
-- [YOUR PATH CONVENTION] (e.g., `here::here()` for R, relative paths for LaTeX)
-- [YOUR SEED CONVENTION] (e.g., `set.seed()` once at top for stochastic code)
-- [YOUR FIGURE STANDARDS] (e.g., white bg, 300 DPI, custom theme)
-- [YOUR COLOR PALETTE] (e.g., institutional colors)
-- [YOUR TOLERANCE THRESHOLDS] (e.g., 1e-6 for point estimates)
+- **XeLaTeX only** — never pdflatex or lualatex
+- **Output structure** — `output/[lecture_name]/` with `images/` subdirectory
+- **Image quality** — minimum 150 DPI, PNG for raster images, preserve aspect ratio
+- **Preamble** — always `\input{../../Preambles/header}` (or appropriate relative path)
+- **Image paths** — always `\graphicspath{{images/}}`
 
 ---
 
 ## Preferences
 
-<!-- Fill in as you discover your working style -->
-
-**Visual:** [How you want figures/plots handled]
-**Reporting:** [Concise bullets? Detailed prose? Details on request?]
+**Image handling:** Extract at source resolution, scale in LaTeX
+**Reporting:** Concise bullets, details on request
 **Session logs:** Always (post-plan, incremental, end-of-session)
-**Replication:** [How strict? Flag near-misses?]
 
 ---
 

@@ -1,0 +1,37 @@
+% header.tex — Metropolis Beamer Preamble
+% Academic Slide Builder | Queen Mary University of London
+
+\documentclass[aspectratio=169, 10pt]{beamer}
+
+\usetheme{metropolis}
+
+% ── Fonts (XeLaTeX) ──────────────────────────────────────────────────────────
+\usepackage{fontspec}
+\usefonttheme{serif}
+
+% ── Colors ───────────────────────────────────────────────────────────────────
+\usepackage{xcolor}
+\definecolor{tblue}{HTML}{003B5C}
+\definecolor{alertgreen}{HTML}{2E8B57}
+\definecolor{markgreen}{HTML}{006400}
+
+\setbeamercolor{frametitle}{bg=tblue, fg=white}
+\setbeamercolor{alerted text}{fg=alertgreen}
+\setbeamercolor{progress bar}{fg=tblue}
+\setbeamercolor{title separator}{fg=tblue}
+
+% ── Packages ─────────────────────────────────────────────────────────────────
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{hyperref}
+\usepackage{appendixnumberbeamer}
+
+% ── Bibliography ─────────────────────────────────────────────────────────────
+\usepackage[round]{natbib}
+\bibliographystyle{apalike}
+
+% ── Misc settings ────────────────────────────────────────────────────────────
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]

@@ -42,7 +42,10 @@
       "Bash(for *)",
       "Bash(gs *)",
       "Bash(pdftk *)",
-      "Bash(mkdir *)"
+      "Bash(mkdir *)",
+      "Bash(python *)",
+      "Bash(pip *)",
+      "Bash(pdfimages *)"
     ]
   },
   "hooks": {
@@ -85,7 +88,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python3 \"$CLAUDE_PROJECT_DIR\"/.claude/hooks/log-reminder.py",
+            "command": "python .claude/hooks/log-reminder.py",
             "timeout": 10
           }
         ]
